@@ -1,0 +1,167 @@
+ :root {
+            --bg-color: #fcfaf7;
+            --text-color: #333;
+            --accent-color: #6b705c;
+            --border-color: #ddbea9;
+        }
+
+        body {
+            font-family: "Georgia", serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        nav {
+            text-align: center;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            background: var(--bg-color);
+            z-index: 100;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--border-color);
+            display: inline-block;
+            margin-bottom: 30px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+        }
+
+        /* Quotes Styling */
+        .quote-block {
+            margin-bottom: 40px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 1.15rem;
+            border-left: 3px solid var(--accent-color);
+            padding-left: 20px;
+            margin-bottom: 5px;
+        }
+
+        .quote-author {
+            font-family: sans-serif;
+            font-size: 0.75rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-left: 23px;
+        }
+
+        /* Grid for Books */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Blog Styling */
+        .blog-post {
+            margin-bottom: 40px;
+        }
+
+        .blog-date {
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+       .media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    
+    /* ADD THIS LINE BELOW */
+    align-items: start; 
+}
+
+        .media-item {
+            background: white;
+            border: 1px solid var(--border-color);
+            padding: 10px;
+        }
+
+ /* Base style for all items */
+.media-item img, .media-item video, .media-item iframe {
+    width: 100%;
+    display: block;
+    border: none;
+    background: #000;
+}
+
+/* Landscape (YouTube) - Standard Height */
+.landscape img, .landscape video, .landscape iframe {
+    height: 200px;
+    object-fit: cover; 
+}
+
+/* Portrait (Instagram Reel) - Tall Height */
+.portrait img, .portrait video, .portrait iframe {
+    height: 450px; 
+    object-fit: contain; 
+}       .media-desc {
+            font-size: 0.8rem;
+            margin-top: 10px;
+            color: var(--text-color);
+            line-height: 1.4;
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 0.8rem;
+            opacity: 0.6;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .github-text-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--text-color);
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.github-text-link:hover {
+    opacity: 0.7;
+}
