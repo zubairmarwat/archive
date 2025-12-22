@@ -58,7 +58,6 @@
             font-size: 1.2rem;
         }
 
-        /* Quotes Styling */
         .quote-block {
             margin-bottom: 40px;
         }
@@ -80,7 +79,7 @@
             margin-left: 23px;
         }
 
-        /* Grid for Books */
+       
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -94,7 +93,7 @@
             text-align: center;
         }
 
-        /* Blog Styling */
+       
         .blog-post {
             margin-bottom: 40px;
         }
@@ -108,8 +107,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
-    
-    /* ADD THIS LINE BELOW */
+  
     align-items: start; 
 }
 
@@ -119,7 +117,7 @@
             padding: 10px;
         }
 
- /* Base style for all items */
+
 .media-item img, .media-item video, .media-item iframe {
     width: 100%;
     display: block;
@@ -127,13 +125,13 @@
     background: #000;
 }
 
-/* Landscape (YouTube) - Standard Height */
+
 .landscape img, .landscape video, .landscape iframe {
     height: 200px;
     object-fit: cover; 
 }
 
-/* Portrait (Instagram Reel) - Tall Height */
+
 .portrait img, .portrait video, .portrait iframe {
     height: 450px; 
     object-fit: contain; 
@@ -153,15 +151,4 @@
             border-top: 1px solid var(--border-color);
         }
 
-        .github-text-link {
-    display: inline-block;
-    margin-top: 20px;
-    color: var(--text-color);
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
-.github-text-link:hover {
-    opacity: 0.7;
-}
+    
