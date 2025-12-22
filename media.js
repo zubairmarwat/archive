@@ -1,38 +1,38 @@
-// ADD YOUR NEW MEDIA HERE
+
 const archiveMedia = [
     
     {
         type: 'video',
         src: 'contents/africa.mp4',
         caption: 'Death over submission',
-        aspect: 'portrait' // Fixed: added comma below
+        aspect: 'portrait' 
     },
     {
         type: 'image',
         src: 'contents/goat.jpg',
         caption: 'Three goats in Bannu, Khyber Pakhtunkhwa',
-        aspect: 'landscape' // Fixed: added comma below
+        aspect: 'landscape' 
     },
     {
         type: 'video',
         src: 'contents/freedom.mp4',
         caption: 'You do not get freedom peacefully',
-        aspect: 'landscape' // Fixed: added comma below
+        aspect: 'landscape'
     },
     {
         type: 'video',
         src: 'contents/religion.mp4',
         caption: '"My religion teaches that"',
-        aspect: 'portrait' // Fixed: added comma below
+        aspect: 'portrait' 
     },
 
     {
         type: 'video',
         src: 'https://www.youtube.com/embed/qNfAFfu6VD0',
         caption: 'Democracy is Hypocrisy',
-        aspect: 'landscape' // Fixed: added comma below
+        aspect: 'landscape' 
     },
-    
+
     {
         type: 'image',
         src: 'contents/pointing.jpg',
@@ -44,15 +44,14 @@ const archiveMedia = [
         type: 'video',
         src: 'contents/favscene.mp4',
         caption: 'My all time favourite movie scene in one of my favourite movie ever. A true hidden gem: The Assassination of Jesse James by the Coward Robert Ford (2007) by Andrew Dominik',
-        aspect: 'landscape' // Fixed: added comma below
+        aspect: 'landscape' 
     },
 ];
 
-// This part automatically builds the grid for you
+
 function displayMedia() {
     const grid = document.getElementById('media-grid-dynamic');
-    if (!grid) return; // Safety check
-
+    if (!grid) return; 
     grid.innerHTML = archiveMedia.map(item => `
         <div class="media-item ${item.aspect}"> 
             <div class="media-content">
