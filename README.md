@@ -1,9 +1,6 @@
 # archive
 to preserve the books, people, and words that sharpened my thinking
 
-# Archive
-
-This is my personal archive — a quiet place for the things I adore, the history I honor, and my thoughts.
 
 ## What You’ll Find Here
 
