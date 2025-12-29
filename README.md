@@ -22,4 +22,4 @@ I wanted one place where I could:
 
 ---
 
-This archive will keep growing over time — slowly, honestly, and one thought at a time.
+This archive will keep growing over time, slowly, honestly, and one thought at a time.
