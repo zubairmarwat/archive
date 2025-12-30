@@ -46,6 +46,12 @@ const archiveMedia = [
         caption: 'My all time favourite movie scene in one of my favourite movie ever. A true hidden gem: The Assassination of Jesse James by the Coward Robert Ford (2007) by Andrew Dominik',
         aspect: 'landscape' 
     },
+      {
+        type: 'video',
+        src: 'https://www.youtube.com/embed/RlKJDwViNKs?si=zmCfaa0AJYqN9cvd',
+        caption: 'Be gone',
+        aspect: 'landscape' 
+    },
 ];
 
 
@@ -68,3 +74,4 @@ function displayMedia() {
 }
 
 document.addEventListener('DOMContentLoaded', displayMedia);
+
