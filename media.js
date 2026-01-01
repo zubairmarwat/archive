@@ -46,12 +46,22 @@ const archiveMedia = [
         caption: 'My all time favourite movie scene in one of my favourite movie ever. A true hidden gem: The Assassination of Jesse James by the Coward Robert Ford (2007) by Andrew Dominik',
         aspect: 'landscape' 
     },
-      {
+      
+    {
         type: 'video',
-        src: 'https://www.youtube.com/embed/RlKJDwViNKs?si=zmCfaa0AJYqN9cvd',
-        caption: 'Be gone',
+        src: 'https://www.youtube.com/embed/zaT39g8Byu4?si=Jk1WI1UuV1TV8r37',
+        caption: 'O, my head be sacrificed for you, for we don't know what will happen later. Become my beloved now, for we don't know what will happen later',
         aspect: 'landscape' 
     },
+
+
+     {
+        type: 'video',
+        src: 'https://www.youtube.com/embed/OmfmH3WvcMY?si=dXSveNPz8QSepC2-',
+        caption: 'Te kho waye che ze ba se krem e Zargiyaa Lewaneya, Se ba krem o se ba ne krem.',
+        aspect: 'landscape' 
+    },
+
 ];
 
 
@@ -74,4 +84,5 @@ function displayMedia() {
 }
 
 document.addEventListener('DOMContentLoaded', displayMedia);
+
 
