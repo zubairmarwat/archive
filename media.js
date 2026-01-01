@@ -50,7 +50,7 @@ const archiveMedia = [
     {
         type: 'video',
         src: 'https://www.youtube.com/embed/zaT39g8Byu4?si=Jk1WI1UuV1TV8r37',
-        caption: 'O, my head be sacrificed for you, for we don't know what will happen later. Become my beloved now, for we don't know what will happen later',
+        caption: 'O, my head be sacrificed for you, for we don`t know what will happen later. Become my beloved now, for we don`t know what will happen later',
         aspect: 'landscape' 
     },
 
@@ -84,5 +84,6 @@ function displayMedia() {
 }
 
 document.addEventListener('DOMContentLoaded', displayMedia);
+
 
 
