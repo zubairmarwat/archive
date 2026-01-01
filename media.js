@@ -47,20 +47,23 @@ const archiveMedia = [
         aspect: 'landscape' 
     },
       
-    {
+     {
         type: 'video',
-        src: 'https://www.youtube.com/embed/zaT39g8Byu4?si=Jk1WI1UuV1TV8r37',
-        caption: 'O, my head be sacrificed for you, for we don`t know what will happen later. Become my beloved now, for we don`t know what will happen later',
+        src: 'contents/ob1.mp4',
+       caption: 'O, my head be sacrificed for you, for we don`t know what will happen later. Become my beloved now, for we don`t know what will happen later',
         aspect: 'landscape' 
     },
 
+
+  
 
      {
         type: 'video',
-        src: 'https://www.youtube.com/embed/OmfmH3WvcMY?si=dXSveNPz8QSepC2-',
+        src: 'contents/ob2.mp4',
         caption: 'Te kho waye che ze ba se krem e Zargiyaa Lewaneya, Se ba krem o se ba ne krem.',
         aspect: 'landscape' 
     },
+
 
 ];
 
@@ -84,6 +87,7 @@ function displayMedia() {
 }
 
 document.addEventListener('DOMContentLoaded', displayMedia);
+
 
 
 
