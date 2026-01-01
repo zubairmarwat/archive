@@ -2,15 +2,15 @@
 to preserve the books, people, and words that sharpened my thinking
 
 
-## What You’ll Find Here
+## what you’ll find here
 
-### Things I Adore
-Projects, ideas, designs, moments, and little inspirations that mean something to me.  
-Some are simple, some experimental — all of them are here because I like them.
 
-## Why I Made This
+### things i adore
 
-I wanted one place where I could:
+
+## why i made this
+
+i wanted one place where I could:
 
 - collect memories and ideas
 - look back and see how I’ve grown
@@ -18,8 +18,8 @@ I wanted one place where I could:
 - share what matters to me
 
 
- Visit the archive here: https://zubairmarwat.github.io/archive/
+ visit the archive here: https://zubairmarwat.github.io/archive/
 
 ---
 
-This archive will keep growing over time, slowly, honestly, and one thought at a time.
+this archive will keep growing over time, slowly, honestly, and one thought at a time.
