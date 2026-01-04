@@ -87,7 +87,7 @@ const archiveMedia = [
 ];
 
 
-function displayMedia() {>
+function displayMedia() {
     const grid = document.getElementById('media-grid-dynamic');
     if (!grid) return; 
     grid.innerHTML = archiveMedia.map(item => `
@@ -106,6 +106,7 @@ function displayMedia() {>
 }
 
 document.addEventListener('DOMContentLoaded', displayMedia);
+
 
 
 
