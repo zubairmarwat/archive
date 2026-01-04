@@ -4,7 +4,7 @@ const archiveMedia = [
     {
         type: 'video',
         src: 'contents/africa.mp4',
-        caption: 'Death over submission',
+        caption: 'Death over Submission',
         aspect: 'portrait' ,
         date: '2025-12-22'
     },
@@ -106,6 +106,7 @@ function displayMedia() {
 }
 
 document.addEventListener('DOMContentLoaded', displayMedia);
+
 
 
 
