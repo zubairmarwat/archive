@@ -4,7 +4,7 @@ const archiveMedia = [
     {
         type: 'video',
         src: 'contents/africa.mp4',
-        caption: 'Death over Submission',
+        caption: 'Death over submission',
         aspect: 'portrait' ,
         date: '2025-12-22'
     },
@@ -59,7 +59,7 @@ const archiveMedia = [
         src: 'contents/ob1.mp4',
        caption: 'For we don`t know what will happen later',
         aspect: 'landscape' ,
-        date: '2026-1-1'
+        date: '2026-01-01'
     },
 
 
@@ -70,7 +70,7 @@ const archiveMedia = [
         src: 'contents/ob2.mp4',
         caption: 'Zargiya Lewaneeya',
         aspect: 'landscape' ,
-        date: '2026-1-1'
+        date: '2026-01-01'
     },
 
     {
@@ -78,7 +78,7 @@ const archiveMedia = [
         src: 'contents/fallujah.mp4',
        caption: 'Death to American Imperialism',
         aspect: 'landscape' ,
-        date: '2026-1-4'
+        date: '2026-01-04'
     },
 
 
@@ -90,24 +90,35 @@ const archiveMedia = [
 function displayMedia() {
     const grid = document.getElementById('media-grid-dynamic');
     if (!grid) return; 
-    grid.innerHTML = archiveMedia.map(item => `
-        <div class="media-item ${item.aspect}"> 
-            <div class="media-content">
-                ${item.type === 'video' && item.src.includes('youtube') 
-                    ? `<iframe src="${item.src}" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`
-                    : item.type === 'video'
-                    ? `<video controls muted playsinline><source src="${item.src}" type="video/mp4"></video>`
-                    : `<img src="${item.src}" alt="Archive Photo">`
-                }
+    
+    grid.innerHTML = archiveMedia.map(item => {
+        // This line converts '2025-12-22' into '22 Dec 2025'
+        const formattedDate = item.date 
+            ? new Date(item.date).toLocaleDateString('en-GB', { 
+                day: 'numeric', 
+                month: 'short', 
+                year: 'numeric' 
+              }) 
+            : '';
+
+        return `
+            <div class="media-item ${item.aspect}"> 
+                <div class="media-content">
+                    ${item.type === 'video' && item.src.includes('youtube') 
+                        ? `<iframe src="${item.src}" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`
+                        : item.type === 'video'
+                        ? `<video controls muted playsinline><source src="${item.src}" type="video/mp4"></video>`
+                        : `<img src="${item.src}" alt="Archive Photo">`
+                    }
+                </div>
+                <div class="media-info">
+                    <p class="media-desc">${item.caption}</p>
+                    <time class="media-date">${formattedDate}</time>
+                </div>
             </div>
-            <p class="media-desc">${item.caption}</p>
-        </div>
-    `).join('');
+        `;
+    }).join('');
 }
-
-document.addEventListener('DOMContentLoaded', displayMedia);
-
-
 
 
 
