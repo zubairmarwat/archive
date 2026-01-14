@@ -44,7 +44,8 @@ const archiveMedia = [
     {
         type: 'video',
         src: 'contents/favscene.mp4',
-        caption: 'My all time favourite movie scene...',
+        caption: 'My all time favourite movie scene in one of my favourite movie ever. The Assassination of Jesse James by the Coward Robert Ford (2007) directed by Andrew Dominik.',
+        aspect: 'landscape',
         aspect: 'landscape',
         date: '2025-12-26'
     },
@@ -107,5 +108,6 @@ function displayMedia() {
 
 
 document.addEventListener('DOMContentLoaded', displayMedia);
+
 
 
